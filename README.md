@@ -2,6 +2,7 @@
 codes used to process the haplotype based computational genetic mapping output files and reported in {} paper
 
 1 - HbCGM results
+
 The result files from HbCGM for all the analyzed phenotypes can be downloaded from the following link:
 
 https://drive.google.com/drive/folders/1HOI16TXqepgct3RTlt71AZjQ1njwuOAo?usp=sharing
