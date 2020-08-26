@@ -12,6 +12,10 @@ https://drive.google.com/drive/folders/1HOI16TXqepgct3RTlt71AZjQ1njwuOAo?usp=sha
 
 takes a typical results file and output a file, contains genes with coding SNPs (cSNPs) and expression values (TRM) in the organ of interest. 
 
-3 - NLP 
+3 - Functional and Regulatory Charactisation of SNPs:
+
+For the charactiersation of functional and regulatory impact of SNP(s) containing genes [mMap](https://github.com/AhmedArslan/mMap) is recommanded, the repo was developed, especally, to understand the role of mouse genetic varistions in a given phenotype, you can read more about it [here](https://github.com/AhmedArslan/mMap). 
+
+4 - NLP 
 
 you can use NLP based gene-phenotypes term search, of you choice, we used [phenolyzer](https://github.com/WGLab/phenolyzer), [Disgenet](https://www.disgenet.org/search) and [MGI](http://www.informatics.jax.org/)
