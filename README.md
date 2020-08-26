@@ -10,7 +10,7 @@ https://drive.google.com/drive/folders/1HOI16TXqepgct3RTlt71AZjQ1njwuOAo?usp=sha
 
 2 - HbCGMEx.py
 
-takes a typical results file and output a file, contains genes with coding SNPs (cSNPs) and expression values (TRM) in the organ of interest. 
+Takes a typical results file and output a file, contains genes with coding SNPs (cSNPs) and expression values (TRM) in the organ of interest. 
 
 3 - Functional and regulatory charactisation of SNPs:
 
