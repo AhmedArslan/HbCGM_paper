@@ -15,10 +15,9 @@ except IndexError:
   print('\n HbCGMEx.py code requires: HbCGM output result file and name of the organ of interest for gene expression')
   pass
 
-
 def barchar(file):
 
-	with open(file) as ij: #file1 = "/Users/aarslan/Desktop/resultsAPRIL2019-batchHBCGM/top_raw/top50_nonrepetitive/2905-initbw-F_results.txt"
+	with open(file) as ij:
 		g = ij.name
 		g1 = g.split('/')
 		g2 = g1[-1].split('.')
@@ -77,5 +76,5 @@ if __name__=='__main__':
 	
     except NameError:
 	    pass
-#T Run
+#To Run
 #pytohn HbCGMEx.py <HbCGM results file> <organ of interest> 
