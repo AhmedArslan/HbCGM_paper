@@ -1,6 +1,6 @@
 # HbCGM_paper
 
-The codes used to process the haplotype based computational genetic mapping output files and reported in {} paper
+The codes used to process the haplotype based computational genetic mapping output files and reported in *Arslan et al. "High Throughput Computational Mouse Genetic Analysis" bioRxiv 2020* paper
 
 1 - HbCGM results
 
