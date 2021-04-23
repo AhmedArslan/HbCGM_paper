@@ -16,4 +16,4 @@ For the charactiersation of functional and regulatory impact of SNP(s) containin
 
 4 - NLP (Natural Language Processing)
 
-you can use NLP based gene-phenotypes term search method(s) of your choice, we used [phenolyzer](https://github.com/WGLab/phenolyzer), [Disgenet](https://www.disgenet.org/search) and [MGI](http://www.informatics.jax.org/)
+For automated literature review on the gene-term association, we used [phenolyzer](https://github.com/WGLab/phenolyzer), [Disgenet](https://www.disgenet.org/search) and [MGI](http://www.informatics.jax.org/) with default settings. 
