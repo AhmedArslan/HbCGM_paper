@@ -10,6 +10,12 @@ The result files from HbCGM for all the analyzed phenotypes can be downloaded fr
 
 This code takes a typical results file and organ of interest as input and automate for users to reproduce he output files, contains genes with coding SNPs (cSNPs) and expression values (TRM) in the organ of interest and known biomedical phenotypes. 
 
+  download the git:
+  
+    clone git https://github.com/AhmedArslan/HbCGM_paper
+    
+    cd HbCGM_paper
+
   To run the code:
   
     python3 HbCGMEx.py <HbCGM file> <organ name> e.g. python3 HbCGMEx.py 50243-succinylcarnitine-M-mutation-resul.txt liver
@@ -21,7 +27,6 @@ This code takes a typical results file and organ of interest as input and automa
     3 - Genes with snps that could impact protein fucntional or regulatory regions and expressed in the organ of interest are subjected to automated literature review on the gene-term association data.
     4 - bar of phenotype values from HbCGM file
     
-
 Data source:
 
 Functional Protein regions:
@@ -33,6 +38,6 @@ Gene-term association:
 
 (see artile for all the information of data sources)
 
-Contact:
+Contact, in case question(s) arise:
 
 <aarslan@stanford.edu>
