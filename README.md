@@ -19,6 +19,7 @@ This code takes a typical results file and organ of interest as input and automa
     1 - File contains all the genes with snps present in their coding or splicing regions and has expression in an organ as specified by a user.(_gene_coding_snps.txt) 
     2 - Second file contains, snps fron step (1) if they overlap with functional protein region like domain or PTM site (_Functional-data.txt).
     3 - Genes with snps that could impact protein fucntional or regulatory regions and expressed in the organ of interest are subjected to automated literature review on the gene-term association data.
+    4 - bar of phenotype values from HbCGM file
     
 
 Data source:
