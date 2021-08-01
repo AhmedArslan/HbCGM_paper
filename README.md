@@ -34,6 +34,6 @@ Gene-term association:
 
 (see artile for all the information of data sources)
 
-Question:
+Contact:
 
 <aarslan@stanford.edu>
