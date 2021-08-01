@@ -25,11 +25,15 @@ This code takes a typical results file and organ of interest as input and automa
 Data source:
 
 Functional Protein regions:
-UniProt 
+UniProt,  
 PTMdb
 
 Gene-term association:
 
 [phenolyzer](https://github.com/WGLab/phenolyzer), [Disgenet](https://www.disgenet.org/search), [MGI](http://www.informatics.jax.org/) and [GWAS Catalog](https://www.ebi.ac.uk/gwas/) with default settings. 
 
-(see artile for all the information of data source)
+(see artile for all the information of data sources)
+
+Question:
+
+<aarslan@stanford.edu>
