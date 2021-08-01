@@ -8,7 +8,7 @@ The result files from HbCGM for all the analyzed phenotypes can be downloaded fr
 
 2 - HbCGMEx.py
 
-This code takes a typical results file and organ of interest as input. and output files, contains genes with coding SNPs (cSNPs) and expression values (TRM) in the organ of interest and known biomedical phenotypes. 
+This code takes a typical results file and organ of interest as input and automate for users to reproduce he output files, contains genes with coding SNPs (cSNPs) and expression values (TRM) in the organ of interest and known biomedical phenotypes. 
 
   To run the code:
   
