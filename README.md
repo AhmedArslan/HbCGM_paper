@@ -38,6 +38,6 @@ Gene-term association:
 
 (see artile for all the information of data sources)
 
-Contact::
+Contact:
 
 <aarslan@stanford.edu>
