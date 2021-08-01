@@ -18,5 +18,17 @@ This code takes a typical results file and organ of interest as input and automa
     
     1 - File contains all the genes with snps present in their coding or splicing regions and has expression in an organ as specified by a user.(_gene_coding_snps.txt) 
     2 - Second file contains, snps fron step (1) if they overlap with functional protein region like domain or PTM site (_Functional-data.txt).
-    3 - Genes with snps that could impact protein fucntional or regulatory regions and expressed in the organ of interest are subjected to automated literature review on the gene-term association with data extracted from [phenolyzer](https://github.com/WGLab/phenolyzer), [Disgenet](https://www.disgenet.org/search) and [MGI](http://www.informatics.jax.org/), [GWAS Catalog] (https://www.ebi.ac.uk/gwas/) with default settings. 
- 
+    3 - Genes with snps that could impact protein fucntional or regulatory regions and expressed in the organ of interest are subjected to automated literature review on the gene-term association data.
+    
+
+Data source:
+
+Functional Protein regions:
+UniProt 
+PTMdb
+
+Gene-term association:
+
+[phenolyzer](https://github.com/WGLab/phenolyzer), [Disgenet](https://www.disgenet.org/search) and [MGI](http://www.informatics.jax.org/), [GWAS Catalog] (https://www.ebi.ac.uk/gwas/) with default settings. 
+
+(see artile for all the information of data source)
