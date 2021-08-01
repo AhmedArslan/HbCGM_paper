@@ -8,12 +8,15 @@ The result files from HbCGM for all the analyzed phenotypes can be downloaded fr
 
 2 - HbCGMEx.py
 
-Takes a typical results file and output a file, contains genes with coding SNPs (cSNPs) and expression values (TRM) in the organ of interest. 
+This code takes a typical results file and organ of interest as input. and output files, contains genes with coding SNPs (cSNPs) and expression values (TRM) in the organ of interest and known biomedical phenotypes. 
 
-3 - Functional and regulatory charactisation of SNPs:
-
-For the charactiersation of functional and regulatory impact of SNP(s) containing genes [mMap](https://github.com/AhmedArslan/mMap) is recommanded, the repo was developed, especally, to understand the role of mouse genetic varistions in a given phenotype, you can read more about it [here](https://github.com/AhmedArslan/mMap). 
-
-4 - NLP (Natural Language Processing)
-
-For automated literature review on the gene-term association, we used [phenolyzer](https://github.com/WGLab/phenolyzer), [Disgenet](https://www.disgenet.org/search) and [MGI](http://www.informatics.jax.org/) with default settings. 
+  To run the code:
+  
+    python3 HbCGMEx.py <HbCGM file> <organ name> e.g. python3 HbCGMEx.py 50243-succinylcarnitine-M-mutation-resul.txt liver
+    
+  Expected output:
+    
+    1 - File contains all the genes with snps present in their coding or splicing regions and has expression in an organ as specified by a user.(_gene_coding_snps.txt) 
+    2 - Second file contains, snps fron step (1) if they overlap with functional protein region like domain or PTM site (_Functional-data.txt).
+    3 - Genes with snps that could impact protein fucntional or regulatory regions and expressed in the organ of interest are subjected to automated literature review on the gene-term association with data extracted from [phenolyzer](https://github.com/WGLab/phenolyzer), [Disgenet](https://www.disgenet.org/search) and [MGI](http://www.informatics.jax.org/), [GWAS Catalog] (https://www.ebi.ac.uk/gwas/) with default settings. 
+ 
