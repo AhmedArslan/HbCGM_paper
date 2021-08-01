@@ -12,9 +12,11 @@ This code takes a typical results file and organ of interest as input and automa
 
   requirements: 
   
+  
   python (2.7 or 3.x) 
   
   The code was optmised on Mac system.
+  
   
   download the git:
   
