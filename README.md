@@ -10,9 +10,15 @@ The result files from HbCGM for all the analyzed phenotypes can be downloaded fr
 
 This code takes a typical results file and organ of interest as input and automate for users to reproduce he output files, contains genes with coding SNPs (cSNPs) and expression values (TRM) in the organ of interest and known biomedical phenotypes. 
 
+  requirements: 
+  
+  python (2.7 or 3.x) 
+  
+  The code was optmised on Mac system.
+  
   download the git:
   
-    clone git https://github.com/AhmedArslan/HbCGM_paper
+    git clone https://github.com/AhmedArslan/HbCGM_paper
     
     cd HbCGM_paper
 
