@@ -29,6 +29,6 @@ PTMdb
 
 Gene-term association:
 
-[phenolyzer](https://github.com/WGLab/phenolyzer), [Disgenet](https://www.disgenet.org/search) and [MGI](http://www.informatics.jax.org/), [GWAS Catalog] (https://www.ebi.ac.uk/gwas/) with default settings. 
+[phenolyzer](https://github.com/WGLab/phenolyzer), [Disgenet](https://www.disgenet.org/search) and [MGI](http://www.informatics.jax.org/), [GWAS Catalog] (https://www.ebi.ac.uk/gwas/), with default settings. 
 
 (see artile for all the information of data source)
