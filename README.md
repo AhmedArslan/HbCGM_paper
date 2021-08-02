@@ -4,7 +4,7 @@ The codes used to process the haplotype based computational genetic mapping outp
 
 1 - HbCGM results
 
-The result files from HbCGM for all the analyzed phenotypes can be downloaded from the following [link](https://drive.google.com/file/d/1ryL_R0__DKN4a_414BS1uCS2-S5bwCtC/view):
+The HbCGM result files for all phenotypic data available from [MPD](https://phenome.jax.org/) can be downloaded from the following [link](https://drive.google.com/file/d/1ryL_R0__DKN4a_414BS1uCS2-S5bwCtC/view):
 
 2 - HbCGMEx.py
 
