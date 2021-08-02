@@ -28,11 +28,15 @@ This code takes a typical results file and organ of interest as input and automa
     python3 HbCGMEx.py <HbCGM file> <organ name> e.g. python3 HbCGMEx.py 50243-succinylcarnitine-M-mutation-resul.txt liver
     
   expected output:
+  
+    1 - bar of phenotype values from HbCGM file
     
-    1 - File contains all the genes with snps present in their coding or splicing regions and has expression in an organ as specified by a user.(_gene_coding_snps.txt) 
-    2 - Second file contains, snps fron step (1) if they overlap with functional protein region like domain or PTM site (_Functional-data.txt).
-    3 - Genes with snps that could impact protein fucntional or regulatory regions and expressed in the organ of interest are subjected to automated literature review on the gene-term association data.
-    4 - bar of phenotype values from HbCGM file
+    2 - File contains all the genes with snps present in their coding or splicing regions and has expression in an organ as specified by a user.(_gene_coding_snps.txt) 
+    3 - Second file contains, snps fron step (1) if they overlap with functional protein region like domain or PTM site (_Functional-data.txt).
+    4 - Genes with snps that could impact protein fucntional or regulatory regions and expressed in the organ of interest are subjected to automated literature review on the gene-term association data. 
+    
+    The file from step (4) contains the final outcome of the pipeline and information present in this file was used to validate the gene Lactb as causative agent of elevated levels of succinylcarnitine metabolies in FVB and AJ strains, see paper for more information. 
+ 
     
 data source:
 
