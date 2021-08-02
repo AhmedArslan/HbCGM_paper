@@ -76,8 +76,8 @@ def expression(file, organ):
 					g = g.rstrip().split('\t')
 					if g[2] == e[0]:
 						cSNP.append(g[2]+'\t'+ g[3]+'\t'+ g[4]+'\t'+ g[5])
-						with open(g2[0]+'_gene_coding_snps.txt', 'a') as k:
-							k.write(g[2]+'\t'+ g[3]+'\t'+ g[4]+'\t'+ g[5]+'\n')
+						# with open(g2[0]+'_gene_coding_snps.txt', 'a') as k:
+						# 	k.write(g[2]+'\t'+ g[3]+'\t'+ g[4]+'\t'+ g[5]+'\n')
 	except:
 		pass
 	
@@ -85,14 +85,16 @@ def expression(file, organ):
 		cSNP1 = []
 		print("--> working on finding functional cSNPs in genes expressed in " +sys.argv[2]+" ...")
 		for cs in OrderedDict.fromkeys(cSNP):
+			with open(g2[0]+'_gene_coding_snps.txt', 'a') as k:
+				k.write(cs+'\n')
 				c = cs.rstrip().split('\t')
 				with open(os.path.join(wd+"/data"+"/Functional-data.txt")) as rr:
 					for r in rr:
 								r = r.rstrip().split("\t")
 								if r[-1] == c[0] and int(c[1]) >= int(r[2]) and int(c[1]) <= int(r[3]):
 									cSNP1.append(c[0]+'\t'+ c[1]+'\t'+ r[1])
-									with open(g2[0]+'_Functional-data.txt', 'a') as k:
-										k.write(c[0]+'\t'+ c[1]+'\t'+ r[1]+"\n")
+									# with open(g2[0]+'_Functional-data.txt', 'a') as k:
+									# 	k.write(c[0]+'\t'+ c[1]+'\t'+ r[1]+"\n")
 									#print("--> "+ c[0]+ " expressed in "+sys.argv[2] +", has " +c[1]+" mutated residue whcih is present within "+r[1]+" region")
 	except:
 		pass
@@ -101,14 +103,16 @@ def expression(file, organ):
 		NGIphen = []
 		print("--> working on finding mosue phenotypes of functional cSNPs in genes expressed in " +sys.argv[2]+" ...")
 		for cs in OrderedDict.fromkeys(cSNP1):
-			c = cs.rstrip().split('\t')
-			with open(os.path.join(wd+"/data"+"/MGI_pheno_genes.txt")) as rr:
-				for r in rr:
-					r = r.rstrip().split("\t")
-					if c[0] == r[0]:
-						NGIphen.append('\t'.join(c)+"\t"+r[-1]+"\t"+r[1])
-						with open(g2[0]+'_MGI_pheno_genes.txt', 'a') as k:
-							k.write('\t'.join(r)+'\n')
+			with open(g2[0]+'_Functional-data.txt', 'a') as k:
+				k.write(cs+'\n')
+				c = cs.rstrip().split('\t')
+				with open(os.path.join(wd+"/data"+"/MGI_pheno_genes.txt")) as rr:
+					for r in rr:
+						r = r.rstrip().split("\t")
+						if c[0] == r[0]:
+							NGIphen.append('\t'.join(c)+"\t"+r[-1]+"\t"+r[1])
+							with open(g2[0]+'_MGI_pheno_genes.txt', 'a') as k:
+								k.write('\t'.join(r)+'\n')
 						#print("--> "+ c[0]+ " previously reported for " +r[-1]+" in mouse")
 						
 	except:
@@ -118,18 +122,20 @@ def expression(file, organ):
 		HuGwas = []
 		print("--> working on finding human phenotypes of functional cSNPs in genes expressed in " +sys.argv[2]+" ...")
 		for cs in OrderedDict.fromkeys(cSNP1):
-			c = cs.rstrip().split('\t')
-			with open(os.path.join(wd+"/data"+"/gene_disease_associations.txt")) as rr:
-				for r in rr:
-					r = r.rstrip().split("\t")
-					if c[0] == r[0].capitalize():
-							HuGwas.append('\t'.join(c)+"\t"+r[1]+"\t"+r[2] +"\t"+r[-1])
-							with open(g2[0]+'_H-gene_disease_associations.txt', 'a') as k:
-								k.write('\t'.join(c)+"\t"+r[-1]+"\t"+r[1]+'\n')
+				c = cs.rstrip().split('\t')
+				with open(os.path.join(wd+"/data"+"/gene_disease_associations.txt")) as rr:
+					for r in rr:
+						r = r.rstrip().split("\t")
+						if c[0] == r[0].capitalize():
+								HuGwas.append('\t'.join(c)+"\t"+r[1]+"\t"+r[2] +"\t"+r[-1])
 							#print("--> "+ c[0]+ " previously reported for " +r[-1]+" in human GWAS")
-		
+			
 	except:
 		pass
+
+	for cs in OrderedDict.fromkeys(HuGwas):
+		with open(g2[0]+'_H-gene_disease_associations.txt', 'a') as k:
+			k.write(cs+'\n')
 	
 	print("--> "+ "pipeline is finished and probably successful.")
 
@@ -151,3 +157,4 @@ if __name__=='__main__':
 
 #To Run
 #pytohn HbCGMEx.py <HbCGM results file> <organ of interest> 
+
