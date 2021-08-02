@@ -135,7 +135,7 @@ def expression(file, organ):
 
 def HbCGM(file, organ):
 
-	#barchar(sys.argv[1])
+	barchar(sys.argv[1])
 
 	expression(sys.argv[1], sys.argv[2])
 
