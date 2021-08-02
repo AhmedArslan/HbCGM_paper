@@ -41,7 +41,7 @@ This code takes a typical results file and organ of interest as input and automa
 data source:
 
   functional Protein regions:
-    UniProt, PTMdb, Ensembl-db
+   UniProt, PTMdb, Ensembl-db
 
   gene-term association:
 
