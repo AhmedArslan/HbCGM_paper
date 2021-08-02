@@ -31,9 +31,9 @@ This code takes a typical results file and organ of interest as input and automa
   
     1 - bar of phenotype values from HbCGM file
     
-    2 - File contains all the genes with snps present in their coding or splicing regions and has expression in an organ as specified by a user.(_gene_coding_snps.txt) 
-    3 - Second file contains, snps fron step (1) if they overlap with functional protein region like domain or PTM site (_Functional-data.txt).
-    4 - Genes with snps that could impact protein fucntional or regulatory regions and expressed in the organ of interest are subjected to automated literature review on the gene-term association data. 
+    2 - File contains all the genes with snps present in their coding or splicing regions and has expression in an organ as specified by a user.(_gene_coding_snps.txt): col-1 is protein, col-2 is mutated residue position, col-3 reference allele and col-4 is altered allele.
+    3 - Second file contains, snps from step (1) if they overlap with functional protein region like domain or PTM site (_Functional-data.txt). col-1 is protein, col-2 is mutated residue position, col-3 protein functional region.
+    4 - Genes with snps that could impact protein fucntional or regulatory regions and expressed in the organ of interest are subjected to automated literature review on the gene-term association data collected for both mouse and human phenotyes. For mouse file (_MGI_pheno_genes.txt) col-1 is protein and   col-1 is protein and col-2 is higher level phenotype; whereas human (_H-gene_disease_associations.txt) for  col-2 is higher level phenotype and col-3 specific phenotype reference allele and col-4 is PMID of the reporting study. 
     
     The file from step (4) contains the final outcome of the pipeline and information present in this file was used to validate the gene Lactb as causative agent of elevated levels of succinylcarnitine metabolies in FVB and AJ strains, see paper for more information. 
  
