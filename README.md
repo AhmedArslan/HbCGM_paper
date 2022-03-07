@@ -25,7 +25,9 @@ This code takes a typical results file and organ of interest as input and automa
 
   To run the code:
   
-    python3 HbCGMEx.py <HbCGM file> <organ name> e.g. python3 HbCGMEx.py 50243-succinylcarnitine-M-mutation-resul.txt liver
+    python3 HbCGMEx.py <HbCGM file> <organ name> 
+    
+    e.g. python3 HbCGMEx.py 50243-succinylcarnitine-M-mutation-resul.txt liver
     
   expected output:
   
